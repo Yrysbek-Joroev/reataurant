@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-top {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
+
+.column-container {
+    display: flex;
+    justify-content: space-around;
+   }
+  
+  .column1 {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .column2 {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .column3 {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .column4 {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .column5 {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Пример адаптивной настройки для маленьких экранов */
+  @media screen and (max-width: 600px) {
+    .column {
+      font-size: 14px;
+    }
+  }
+  
