@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+.slider {
+  position: relative;
+}
+.prevSide {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+}
+button:last-child {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+}
