@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { cardsContext } from "../../contexts/CardsContextProvider";
 import CollectionCard from "./CollectionCards";
+import "./CollectionList.css";
 
 const CollectionList = () => {
   const { getCards, collection } = useContext(cardsContext);
@@ -8,15 +9,7 @@ const CollectionList = () => {
     getCards();
   }, []);
   return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
-        rowGap: "20px",
-        marginTop: "40px",
-      }}
-    >
+    <div className="card-container">
       {collection.map((item) => (
         <CollectionCard item={item} key={item.id} />
       ))}

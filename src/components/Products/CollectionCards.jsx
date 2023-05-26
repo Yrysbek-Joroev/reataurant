@@ -7,16 +7,27 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 export default function CollectionCard({ item }) {
+  const [isHovered, setIsHovered] = React.useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovered(false);
+  };
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, boxShadow: "none" }}>
       <CardMedia
         sx={{ height: 420 }}
-        image={item.picture}
+        image={isHovered ? item.picture2 : item.picture1}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {item.description}
+          {item.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {item.price}
