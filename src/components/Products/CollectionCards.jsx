@@ -26,10 +26,19 @@ export default function CollectionCard({ item }) {
         title="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          sx={{ fontFamily: "inherit", fontSize: "17px" }}
+          gutterBottom
+          variant="h5"
+          component="div"
+        >
           {item.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography
+          sx={{ fontSize: "20px" }}
+          variant="body2"
+          color="text.secondary"
+        >
           {item.price}
         </Typography>
       </CardContent>
