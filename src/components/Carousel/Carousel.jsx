@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Carousel.css";
+import next from "../images/next.svg";
+import prev from "../images/prev.svg";
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,9 +27,11 @@ const Carousel = () => {
     <div className="slider">
       <img src={slides[currentSlide]} alt="slide" width="100%" />
       <button className="prevSide" onClick={prevSlide}>
-        Предыдущий слайд
+        <img src={prev} alt="" width="40px" />
       </button>
-      <button onClick={nextSlide}>Следующий слайд</button>
+      <button className="nextSide" onClick={nextSlide}>
+        <img src={next} alt="" width="40px" />
+      </button>
     </div>
   );
 };

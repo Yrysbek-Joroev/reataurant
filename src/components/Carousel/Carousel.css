@@ -6,11 +6,19 @@
 }
 .prevSide {
   position: absolute;
-  top: 50%;
+  border: none;
+  width: 36px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.4);
+  top: 40%;
   left: 40px;
 }
-button:last-child {
+.nextSide {
+  background: rgba(255, 255, 255, 0.4);
   position: absolute;
-  top: 50%;
+  border: none;
+  width: 36px;
+  height: 50px;
+  top: 40%;
   right: 40px;
 }
