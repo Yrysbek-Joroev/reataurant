@@ -1,15 +1,19 @@
-import React, { createContext } from 'react'
-
+import React, { createContext, useState } from 'react'
+import {API} from '../helpers/consts'
+import axios from 'axios'
 export const cardsContext = createContext()
-export const API = 'http://localhost:8000/trips'
-const CardsContextProvider = () => {
-   // async function getCards() {
-  //   let { data } = await axios(API);
-  //   setCollection(data);
-  // }
-
+const CardsContextProvider = ({children}) => {
+  const [collection, setCollection] = useState([])
+  async function getCards() {
+    let { data } = await axios(API);
+    setCollection(data);
+  }
+  const values = {
+    collection,
+    getCards
+  }
   return (
-    <div>CardsContextProvider</div>
+    <cardsContext.Provider value={values}>{children}</cardsContext.Provider>
   )
 }
 
