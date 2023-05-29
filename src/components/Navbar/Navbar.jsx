@@ -16,6 +16,7 @@ const Navbar = () => {
           justifyContent: "space-around",
           marginTop: "2%",
           marginBottom: "2%",
+          alignItems: "center",
         }}
       >
         <div>
