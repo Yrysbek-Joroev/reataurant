@@ -5,11 +5,12 @@ import CollectionList from './components/Products/CollectionList'
 
 
 
+
 const App = () => {
   return (
     <div>
-      {/* <Navbar/> */}
-      <Carousel/>
+     
+      <Carousel/> 
       <CollectionList/>
       <Footer/>
     </div>
