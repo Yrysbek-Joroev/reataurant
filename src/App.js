@@ -2,7 +2,8 @@ import React from 'react'
 import Carousel from './components/Carousel/Carousel'
 import Footer from './components/footer/Footer'
 import CollectionList from './components/Products/CollectionList'
-import Navbar from './components/navbar/Navbar'
+import Navbar from './components/Navbar/Navbar'
+import MayRoutes from './MayRoutes'
 
 
 
@@ -11,9 +12,11 @@ const App = () => {
   return (
     <div>
       <Navbar/>
-      <Carousel/>
+      <Carousel/> 
       <CollectionList/>
       <Footer/>
+      <MayRoutes/>
+
     </div>
   )
 }

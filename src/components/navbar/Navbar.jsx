@@ -18,6 +18,7 @@ const Navbar = () => {
   //   const isPopoverOpen = Boolean(anchorEl);
   return (
     <div>
+      <h2>dcldcsmcs</h2>
       <div className="reclama">
         <h3>Бесплатная доставка при заказе на 4000$</h3>
       </div>
