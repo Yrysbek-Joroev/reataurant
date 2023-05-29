@@ -1,5 +1,9 @@
 import React from "react";
 import NearMeIcon from "@mui/icons-material/NearMe";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import SearchIcon from "@mui/icons-material/Search";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 
 const Navbar = () => {
   return (
