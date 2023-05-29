@@ -14,7 +14,8 @@ const Navbar = () => {
         style={{
           display: "flex",
           justifyContent: "space-around",
-          alignItems: "center",
+          marginTop: "2%",
+          marginBottom: "2%",
         }}
       >
         <div>
@@ -27,10 +28,21 @@ const Navbar = () => {
           <h1>INCANTO</h1>
           <span>ITALY</span>
         </div>
-        <div>
-          <LocationOnIcon /> <SearchIcon /> <FavoriteBorderIcon />{" "}
+        <div className="icon">
+          <LocationOnIcon /> <SearchIcon /> <FavoriteBorderIcon />
           <WorkOutlineIcon />
         </div>
+      </div>
+      <div className="routi">
+        <p>Бестселлеры</p>
+        <p>Купальники</p>
+        <p>VERY SEXY</p>
+        <p>Бюсгальтеры и трусы</p>
+        <p>Базовая коллекция</p>
+        <p>Боди</p>
+        <p>Хлопок</p>
+        <p>Белье</p>
+        <p>Свадебное белье</p>
       </div>
     </div>
   );

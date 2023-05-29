@@ -1,7 +1,43 @@
-*{
+.nav-big {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .incanto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15%;
+  }
+  
+  .incanto h1 {
+    font-size: 24px;
     margin: 0;
-    padding: 0;
-}
-.incanto{
-   
-}
+  }
+  
+  .incanto span {
+    font-size: 14px;
+  }
+
+  .icon > * {
+    margin-right: 10px; 
+  }
+
+  span {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .routi {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+  }
+
+  .routi p {
+    margin: 0;
+    padding: 10px;
+  }
+  
