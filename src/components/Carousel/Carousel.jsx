@@ -22,7 +22,6 @@ const Carousel = () => {
       (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
     );
   };
-
   return (
     <div className="slider">
       <img src={slides[currentSlide]} alt="slide" width="100%" />

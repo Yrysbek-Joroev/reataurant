@@ -1,6 +1,7 @@
 .card-container {
-  margin: 40px 100px;
+  margin: 40px 150px;
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 20px;
+  row-gap: 30px;
 }
