@@ -3,19 +3,17 @@ import Carousel from './components/Carousel/Carousel'
 import Footer from './components/footer/Footer'
 import CollectionList from './components/Products/CollectionList'
 import Navbar from './components/Navbar/Navbar'
-import MayRoutes from './MayRoutes'
-
-
+import MayRoutes from './components/routes/MayRoutes'
 
 
 const App = () => {
   return (
     <div>
       <Navbar/>
-      <Carousel/> 
+      <Carousel/>
+      <MayRoutes/>
       <CollectionList/>
       <Footer/>
-      <MayRoutes/>
 
     </div>
   )

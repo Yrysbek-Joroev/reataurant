@@ -1,6 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 2% 12%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
 .nav-big {
   display: flex;
-  justify-content: space-around;
+  column-gap: 16%;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -8,11 +23,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 15%;
 }
 
 .incanto h1 {
-  font-size: 24px;
+  font-size: 60px;
   margin: 0;
 }
 
@@ -20,11 +34,24 @@
   font-size: 14px;
 }
 
-.icon > * {
-  margin-right: 10px;
+.icon {
+  display: flex;
+  column-gap: 60%;
 }
 
 span {
   font-size: 16px;
   margin-left: 5px;
+}
+
+.routi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.routi p {
+  margin: 0;
+  padding: 10px;
 }
