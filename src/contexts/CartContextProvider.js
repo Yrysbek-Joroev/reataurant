@@ -35,7 +35,7 @@ const getCart = () => {
     let cart = JSON.parse(localStorage.getItem("cart"));
   
    
-  //проверка на наличие cart в localStorage,если его нет то добавляем объект        под ключом "cart"
+  //проверка на наличие cart в localStorage,если его нет то добавляем объект под ключом "cart"
   if(!cart) {
       localStorage.setItem("cart", JSON.stringify({products: [], totalPrice: 0,}));
        cart = {

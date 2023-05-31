@@ -9,15 +9,15 @@ import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <FavoriteContextProvider>
-  <CartContextProvider>
-   <CardsContextProvider>
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
-   </CardsContextProvider>
-  </CartContextProvider>
-  </FavoriteContextProvider>
+   <FavoriteContextProvider>
+    <CartContextProvider>
+     <CardsContextProvider>
+      <BrowserRouter>
+       <App />
+      </BrowserRouter>
+     </CardsContextProvider>
+    </CartContextProvider>
+   </FavoriteContextProvider>
 )
 
 

@@ -22,7 +22,7 @@ export default function Cart() {
   //     user: { email },
   //   } = useAuth();
 
-  console.log(email);
+  // console.log(email);
 
   React.useEffect(() => {
     getCart();
@@ -108,7 +108,7 @@ export default function Cart() {
         </Table>
         <Button onClick={cartCleaner}> BUY NOW FOR {cart?.totalPrice} $</Button>
       </TableContainer>
-      <div id="paymentRight" style={{ margin: "0 auto" }}>
+      {/* <div id="paymentRight" style={{ margin: "0 auto" }}>
         <div id="visaInfo">
           <div id="infoLeft">
             <h3>Card Number</h3>
@@ -137,7 +137,7 @@ export default function Cart() {
         >
           BUY
         </button>
-      </div>
+      </div> */}
     </>
   );
 }
