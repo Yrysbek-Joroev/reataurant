@@ -5,9 +5,16 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { IconButton, Grid } from "@mui/material";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import { useCart } from "../../contexts/CartContextProvider";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
+import { useFavorite } from "../../contexts/FavoriteContextProvider";
 
 export default function CollectionCard({ item }) {
   const [isHovered, setIsHovered] = React.useState(false);
+  const { addProductToCart, checkProductInCart } = useCart();
+  const { addProductToFavorites, checkProductInFavorites } = useFavorite();
 
   const handleMouseOver = () => {
     setIsHovered(true);
@@ -42,6 +49,17 @@ export default function CollectionCard({ item }) {
           {item.price}
         </Typography>
       </CardContent>
+      <IconButton onClick={() => addProductToCart(item)}>
+        <AddShoppingCartIcon
+          color={checkProductInCart(item.id) ? "primary" : undefined}
+        />
+      </IconButton>
+      <IconButton onClick={() => addProductToFavorites(item)}>
+        <BookmarkBorderIcon
+          color={checkProductInFavorites(item.id) ? "primary" : undefined}
+        />
+      </IconButton>
+
       <CardActions>
         <Button size="small">Share</Button>
         <Button size="small">Learn More</Button>
