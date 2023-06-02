@@ -9,6 +9,9 @@ import WeddingLingerie from "../Products/ WeddingLingerie";
 import Bodysuit from "../Products/ Bodysuit";
 import BrasBriefs from "../Products/ BrasBriefs";
 import BaseCollection from "../Products/ BaseCollection";
+import CartPage from "../pages/CartPage";
+import FavoritePage from "../pages/FavoritePage";
+import NotFoundPage from "../Products/NotFoundPage";
 
 const MayRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -21,6 +24,9 @@ const MayRoutes = () => {
     { link: "/linen", element: <Linen />, id: 8 },
     { link: "/swimwear", element: <Swimwear />, id: 9 },
     { link: "/very", element: <VerySexy />, id: 10 },
+    { link: "/cart", element: <CartPage />, id: 11 },
+    { link: "/favorites", element: <FavoritePage />, id: 12 },
+    { link: "*", element: <NotFoundPage />, id: 12 },
   ];
 
   return (

@@ -5,6 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import "../navbar/Navbar.css";
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
