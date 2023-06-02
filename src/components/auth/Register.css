@@ -1,0 +1,40 @@
+.big{
+  opacity: 0.5;
+}
+.big-register{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 12%;
+   opacity: 1;
+   padding: 60px;
+}
+
+
+.big-register input{
+  width: 600px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.register-left button {
+  background-color: black;
+  color: white;
+  border: none;
+  height: 20%;
+  width: 30%;
+}
+
+.register-rigth button {
+  background-color: black;
+  color: white;
+  border: none;
+  height: 20%;
+  width: 30%;
+}
+
+ h3{
+  padding-bottom: 3%;
+  font-family: Helvetica;
+}
+
+
