@@ -12,11 +12,11 @@ import Register from './components/auth/Register'
 const App = () => {
   return (
     <div>
-      {/* <Navbar/>
+      <Navbar/>
       <Carousel/>
       <MayRoutes/>
       <CollectionList/>
-      <Footer/> */}
+      <Footer/>
      <Register/> 
     </div>
   )
